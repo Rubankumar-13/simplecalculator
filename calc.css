@@ -72,6 +72,10 @@ font-family: 'Times New Roman', Times, serif;
 top: 30%;
 }
 @media screen and (max-width: 700px) {
+  .body{
+    background-size:cover;
+    baclground-repeat:no-repeat;
+  }
 .heading{
 display:none;
 }
