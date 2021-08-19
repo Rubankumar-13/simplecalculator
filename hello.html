@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>ONLINE CALCULATOR</title>
+
+   
+</head>
+<body>
+    
+   
+    <form name="math" class="calculator" action="hello.html" method="POST">
+    <input type="text" id="display" name="answer">
+    <br>
+    <input type="button" class="operators" value="C" onclick="math.answer.value=''" >
+    <input type="button" class="operators"value="00" onclick="math.answer.value+='00'" >
+    <input type="button" class="operators" value="<" onclick="math.answer.value=math.answer.value.substring(0,math.answer.value.length*1-1)" >
+    <input type="button" class="operators" value="/" onclick="math.answer.value+='/'" >
+    <br>
+    
+    <input type="button"  id="buttons" value="9" onclick="math.answer.value+='9'" >
+    <input type="button"  id="buttons" value="8" onclick="math.answer.value+='8'" >
+    <input type="button"  id="buttons" value="7" onclick="math.answer.value+='7'" >
+    <input type="button"  class="operators" value="*" onclick="math.answer.value+='*'" >
+    <br>
+    <input type="button"  id="buttons" value="6" onclick="math.answer.value+='6'" >
+    <input type="button"  id="buttons" value="5" onclick="math.answer.value+='5'" >
+    <input type="button"  id="buttons" value="4" onclick="math.answer.value+='4'" >
+    <input type="button"  class="operators" value="-" onclick="math.answer.value+='-'" >
+    <br>
+    <input type="button"  id="buttons" value="3" onclick="math.answer.value+='3'" >
+    <input type="button"  id="buttons" value="2" onclick="math.answer.value+='2'" >
+    <input type="button"  id="buttons" value="1" onclick="math.answer.value+='1'" >
+    <input type="button"  class="operators" value="+" onclick="math.answer.value+='+'" >
+    <br> 
+    <input type="button"  class="operators" value="." onclick="math.answer.value+='.'" >
+    <input type="button"  class="operators" value="0" onclick="math.answer.value+='0'" >
+    <input type="button"  class="operators" value="=" onclick="math.answer.value=eval(math.answer.value)" >
+    <input type="button"  class="operators" value="()" onclick="math.answer.value+='()'" >
+</form>
+</body>
+</html>

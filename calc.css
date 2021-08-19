@@ -1,0 +1,103 @@
+body{
+background:url(./background.png);
+background-size: cover;
+}
+.calculator{
+width: 500px;
+padding-top: 100px;
+padding-bottom: 100px;
+position: absolute;
+top: 0%;
+left: 60%;
+transform: translate(-50,-50);
+overflow: 0.2s;
+
+text-align: center;
+}
+#display{
+border: none;
+border-radius: 30px;
+background-color: grey;
+position:relative;
+width: 25rem;
+padding-top: 0% ;
+margin: auto;
+font-size: 30px;
+font-family:sans-serif;
+font-weight: 300;
+height: 3rem;
+border: 1px solid black;
+}
+#buttons{
+border: none;
+border-radius: 10px;
+background-color: darkcyan;
+position: relative;
+width: 5rem;
+height: 5rem;
+margin: auto;
+font-weight: 300;
+font-size: 3rem;
+border: 2px solid black;
+font-family: 'Times New Roman', Times, serif;
+}
+.operators{ 
+border: none;
+border-radius: 10px;
+background-color: darkcyan;
+position: relative;
+width: 5rem;
+height: 5rem;
+margin: 1px;
+font-weight: 300;
+font-size: 3rem;
+border: 2px solid black;
+transition: 0.25px ;
+cursor: pointer ;
+font-family: 'Times New Roman', Times, serif;
+
+}
+.operators:hover{
+background: white;
+}
+#buttons:hover{
+background:darkblue;
+}
+.heading{
+color:darkred;
+height: 2rem;
+width: 5rem;
+font-size: 50px;
+font-family: 'Times New Roman', Times, serif;
+top: 30%;
+}
+@media screen and (max-width: 700px) {
+.heading{
+display:none;
+}
+.calculator{
+height: 200px;
+width: 400px;
+padding-right: 2px;
+position:absolute;
+top: 2% ;
+left: 10%;
+float:left;
+display: flexbox;
+position: absolute;
+}
+.operators{
+width: 3rem;
+height: 3rem;
+font-size: 2rem;
+}
+#buttons{
+width: 3rem;
+height: 3rem;
+font-size: 2rem;
+}
+#display{
+width: 15rem;
+height:2rem;
+}
+}
